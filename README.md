@@ -1,1 +1,3 @@
-# dw-simple-animation-2
+# A simple CSS animation
+
+An example of using CSS keyframes for animation.

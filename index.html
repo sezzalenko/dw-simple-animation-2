@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Base exercise page</title>
+
+    <meta name="description" content="A simple exercise template." />
+    <!-- styles -->
+    <style>
+      .box {
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation-duration: 5s;
+        animation-name: imageswitcher;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-origin: 50px 100px;
+      }
+      @keyframes imageswitcher {
+        from {
+          background-image: url(https://cdn.glitch.com/bc01880c-1701-40f4-bd17-3a5d5f70dc07%2Fcover-1.jpg?v=1620782070129);
+          margin-left: 0px;
+          transform: rotate(-45deg)
+        }
+        50% {
+          background-image: url(https://cdn.glitch.com/bc01880c-1701-40f4-bd17-3a5d5f70dc07%2Fcover-2.jpg?v=1620782066989);
+          margin-left: 50px
+        }
+        to {
+          background-image: url(https://cdn.glitch.com/bc01880c-1701-40f4-bd17-3a5d5f70dc07%2Fcover-3.jpg?v=1620782067270);
+          margin-left: 100px;
+          transform: rotate(45deg)
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A Simple Animation</h1>
+    <div class="box"></div>
+      
+    <!-- script -->
+    <script></script>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
